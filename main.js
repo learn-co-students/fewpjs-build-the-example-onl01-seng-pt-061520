@@ -5,7 +5,14 @@ const FULL_HEART = '♥'
 // Your JavaScript code goes here!
 
 
+let likes = document.querySelectorAll("span.like-glyph");
 
+for (const like of likes) {
+  if (like.innerHTML == EMPTY_HEART) {
+      mimicServerCall(url="http://mimicServer.example.com", config={})
+      .catch(() => {})
+  }
+}
 
 //------------------------------------------------------------------------------
 // Ignore after this point. Used only for demo purposes
